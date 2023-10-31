@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sum",
+					"strict" : false
+				},
+				{
+					"name" : "cou",
+					"strict" : false
+				},
+				{
+					"name" : "air",
+					"strict" : false
+				},
+				{
+					"name" : "bir",
+					"strict" : false
+				},
+				{
+					"name" : "cir",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

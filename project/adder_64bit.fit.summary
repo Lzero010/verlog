@@ -1,0 +1,16 @@
+Fitter Status : Failed - Sun Oct 22 13:13:00 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : adder_64bit
+Top-level Entity Name : adder_64bit
+Family : Cyclone IV E
+Device : EP4CE15F23C6
+Timing Models : Final
+Total logic elements : 385 / 15,408 ( 2 % )
+    Total combinational functions : 160 / 15,408 ( 1 % )
+    Dedicated logic registers : 320 / 15,408 ( 2 % )
+Total registers : 320
+Total pins : 195 / 344 ( 57 % )
+Total virtual pins : 0
+Total memory bits : 288 / 516,096 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

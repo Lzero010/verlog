@@ -1,0 +1,26 @@
+|main_quan
+sum <= quanjiaqi:inst1.so
+air => quanjiaqi:inst.a
+bir => quanjiaqi:inst.b
+cir => quanjiaqi:inst1.b
+cou <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main_quan|quanjiaqi:inst1
+so <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+co <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main_quan|quanjiaqi:inst
+so <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+co <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

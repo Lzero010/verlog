@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DDS_top">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:DDS_1|squ:u7|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d281.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:DDS_1|tri_rom:u6|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3281.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:DDS_1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_eem.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:DDS_1|lpm_mult:Mult0" CBX_FILE_NAME="mult_gt01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_top|DDS:DDS_1|sin:u5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hk71.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,309 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/_mycode/FPGA_Verilog/other_code/3/part5/simulation/modelsim
+T_opt
+!s110 1697384787
+V9W=dSoQYeX>3P<Mj1A[TX2
+04 13 4 work bcdadder_4_tb fast 0
+=1-e884a5894f9a-652c0952-3e7-297c
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vbcdadder
+Z2 !s110 1697384786
+!i10b 1
+!s100 bDSK>amUancNRC2fBC;]C2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IFBR8S9BFmRN?kZ]gJPcDL3
+R0
+Z4 w1697381082
+Z5 8D:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder.v
+Z6 FD:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder.v
+!i122 6
+Z7 L0 1 13
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z10 !s108 1697384786.000000
+Z11 !s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder.v|
+!i113 0
+Z13 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 -vlog01compat -work work +incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vbcdadder_4
+R2
+!i10b 1
+!s100 U00CKz259P_WH?ERdU@SO0
+R3
+I1LPK:B1h[f6e7bD=n832m0
+R0
+Z15 w1697384774
+Z16 8D:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder_4.v
+Z17 FD:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder_4.v
+!i122 9
+L0 1 24
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z18 !s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder_4.v|
+Z19 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/bcdadder_4.v|
+!i113 0
+R13
+R14
+R1
+vbcdadder_4_tb
+R2
+!i10b 1
+!s100 ?B@kO@OH`i`ae1jQMCg9o3
+R3
+IAMkdWlKWgoA56iof_iD1A0
+R0
+R15
+R16
+R17
+!i122 9
+L0 28 23
+R8
+R9
+r1
+!s85 0
+31
+R10
+R18
+R19
+!i113 0
+R13
+R14
+R1
+vbcdadder_tb
+R2
+!i10b 1
+!s100 VPoXo]ijLOT7?;PA9;6U@0
+R3
+IA7ob:@CVTVAU@04G2DR0n0
+R0
+R4
+R5
+R6
+!i122 6
+L0 15 15
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R1
+vcircuitA
+R2
+!i10b 1
+!s100 9MSeRYAnE=FOnbQ5@[7Cf3
+R3
+IW46;eoInH80C_Q2ZzjZUP0
+R0
+w1697383884
+8D:/_mycode/FPGA_Verilog/other_code/3/part5/circuitA.v
+FD:/_mycode/FPGA_Verilog/other_code/3/part5/circuitA.v
+!i122 1
+L0 1 9
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/circuitA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/circuitA.v|
+!i113 0
+R13
+R14
+R1
+ncircuit@a
+vcomparator
+R2
+!i10b 1
+!s100 C?1;H3S0PGkgL6<RC7UYD2
+R3
+IIDUl3GlT;=E0IH^FO8W6l1
+R0
+w1697383306
+8D:/_mycode/FPGA_Verilog/other_code/3/part5/comparator.v
+FD:/_mycode/FPGA_Verilog/other_code/3/part5/comparator.v
+!i122 2
+R7
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/comparator.v|
+!i113 0
+R13
+R14
+R1
+vdigit_7seg
+R2
+!i10b 1
+!s100 LaVHC2OgLDS;?5<nB>T7`0
+R3
+IVI[C3V`8l0Q=URBEQh2Cg2
+R0
+w1696769588
+8D:/_mycode/FPGA_Verilog/other_code/3/part5/digit_7seg.v
+FD:/_mycode/FPGA_Verilog/other_code/3/part5/digit_7seg.v
+!i122 5
+L0 1 27
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/digit_7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/digit_7seg.v|
+!i113 0
+R13
+R14
+R1
+vfulladder_1
+R2
+!i10b 1
+!s100 E]lNgA2bEG1[fd?UU[P5o1
+R3
+I^Q]NC?KE3JgP3DfHzo>X82
+R0
+w1696769535
+8D:/_mycode/FPGA_Verilog/other_code/3/part5/fulladder_1.v
+FD:/_mycode/FPGA_Verilog/other_code/3/part5/fulladder_1.v
+!i122 3
+L0 1 7
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/fulladder_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/fulladder_1.v|
+!i113 0
+R13
+R14
+R1
+vmux2to1_4
+R2
+!i10b 1
+!s100 Y2aea8;<dS8:3cQoFW@ST0
+R3
+I4OVCDRiIf_Kz38fA^jC<g2
+R0
+w1696769557
+8D:/_mycode/FPGA_Verilog/other_code/3/part5/mux2to1_4.v
+FD:/_mycode/FPGA_Verilog/other_code/3/part5/mux2to1_4.v
+!i122 4
+L0 1 10
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/mux2to1_4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/mux2to1_4.v|
+!i113 0
+R13
+R14
+R1
+vpart5
+R2
+!i10b 1
+!s100 SMjDSlY>Q@OSmMhP4`Uaj1
+R3
+IEoH^<7VF`o5B26d72=PRJ3
+R0
+w1696769678
+8D:/_mycode/FPGA_Verilog/other_code/3/part5/part5.v
+FD:/_mycode/FPGA_Verilog/other_code/3/part5/part5.v
+!i122 8
+L0 1 20
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/part5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/part5.v|
+!i113 0
+R13
+R14
+R1
+vripple_fulladder_4
+R2
+!i10b 1
+!s100 LCa7]`z2g^KQo@ooH=gRV1
+R3
+I46DYZYW_?d=Q<?A6AI=g92
+R0
+Z20 w1697383268
+Z21 8D:/_mycode/FPGA_Verilog/other_code/3/part5/ripple_fulladder_4.v
+Z22 FD:/_mycode/FPGA_Verilog/other_code/3/part5/ripple_fulladder_4.v
+!i122 0
+L0 1 16
+R8
+R9
+r1
+!s85 0
+31
+Z23 !s108 1697384785.000000
+Z24 !s107 D:/_mycode/FPGA_Verilog/other_code/3/part5/ripple_fulladder_4.v|
+Z25 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/_mycode/FPGA_Verilog/other_code/3/part5|D:/_mycode/FPGA_Verilog/other_code/3/part5/ripple_fulladder_4.v|
+!i113 0
+R13
+R14
+R1
+vripple_fulladder_4_tb
+R2
+!i10b 1
+!s100 Ya>c=;:maom_ba:8A=clD2
+R3
+IYM<KeCJfdUE?T5iEUEO6j1
+R0
+R20
+R21
+R22
+!i122 0
+L0 21 21
+R8
+R9
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 0
+R13
+R14
+R1

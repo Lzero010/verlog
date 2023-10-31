@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at keyn.v(24): always construct contains both blocking and non-blocking assignments File: D:/Quartus data/keyn/keyn.v Line: 24

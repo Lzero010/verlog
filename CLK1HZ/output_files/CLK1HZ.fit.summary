@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Sep 19 20:24:03 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : CLK1HZ
+Top-level Entity Name : CLK1HZ
+Family : Cyclone IV E
+Device : EP4CE15F23C8
+Timing Models : Final
+Total logic elements : 55 / 15,408 ( < 1 % )
+    Total combinational functions : 55 / 15,408 ( < 1 % )
+    Dedicated logic registers : 33 / 15,408 ( < 1 % )
+Total registers : 33
+Total pins : 3 / 344 ( < 1 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

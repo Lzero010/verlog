@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at CLK1HZ.v(9): always construct contains both blocking and non-blocking assignments File: D:/Quartus data/CLK1HZ/CLK1HZ.v Line: 9

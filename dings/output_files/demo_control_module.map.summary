@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 16 22:33:53 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : demo_control_module
+Top-level Entity Name : smg_interface_demo
+Family : Cyclone IV E
+Total logic elements : 190
+    Total combinational functions : 166
+    Dedicated logic registers : 108
+Total registers : 108
+Total pins : 16
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

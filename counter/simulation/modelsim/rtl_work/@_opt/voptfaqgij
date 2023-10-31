@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus data\counter\simulation\modelsim
+T_opt
+V<DCL5N5IHTJzN7><XlKCb0
+04 10 4 work counter_tb fast 0
+=1-744ca1de813b-652e426b-15-4a24
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.1c;51
+vcounter
+IP[KO9=4bkYGWQebIZG5LU1
+VE;DT@_gQgF8Y;d4];;>iT1
+Z1 dD:\Quartus data\counter\simulation\modelsim
+w1697530260
+8D:/Quartus data/counter/counter.v
+FD:/Quartus data/counter/counter.v
+L0 1
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z4 !s92 -vlog01compat -work work {+incdir+D:/Quartus data/counter} -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 `<SUReaiojo1RhA`R<ZV>0
+!s85 0
+!s108 1697530473.875000
+!s107 D:/Quartus data/counter/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus data/counter|D:/Quartus data/counter/counter.v|
+vcounter_tb
+I6EUjTFam=AXkhFc9O<@1>2
+VN6X[[7nWg]oz4[ZCKXDXe0
+R1
+w1697530415
+8D:/Quartus data/counter/counter_tb.v
+FD:/Quartus data/counter/counter_tb.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 VR^2nOLX?zN=303L<3MCj2
+!s85 0
+!s108 1697530473.932000
+!s107 D:/Quartus data/counter/counter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Quartus data/counter|D:/Quartus data/counter/counter_tb.v|

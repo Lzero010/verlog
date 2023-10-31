@@ -1,0 +1,456 @@
+# do ersi.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ersi
+# 
+# Top level modules:
+# 	ersi
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module ersi_vlg_vec_tst
+# 
+# Top level modules:
+# 	ersi_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver -c -t 1ps -novopt work.ersi_vlg_vec_tst 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing D:/Quartus data/ersi/simulation/qsim/work.ersi_vlg_vec_tst
+# Loading work.ersi_vlg_vec_tst
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# Refreshing D:/Quartus data/ersi/simulation/qsim/work.ersi
+# Loading work.ersi
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(84): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(97): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(110): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(123): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(133): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(143): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(160): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(177): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(194): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) ersi.vo(211): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+# 
+#         Region: /ersi_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_ver' at "altera_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library '220model_ver' at "220model_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             D:/Quartus data/ersi/simulation/qsim/work
+# Error loading design

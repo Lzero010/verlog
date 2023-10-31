@@ -1,0 +1,9 @@
+module circuitA
+  (
+    input wire[3:0] ain,
+    output  wire [3:0]aout    
+  );
+  
+  assign aout = ain + 4'b0110;
+
+endmodule

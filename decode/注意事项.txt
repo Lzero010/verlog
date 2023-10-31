@@ -1,0 +1,57 @@
+建立项目
+cydone 四代E
+EP4CE15F23C8
+设计文件的选择
+Design Files里面的Verilog HDL File
+空白页的名字改为文件同号：方式为在文件进行另存为，检验另存为和项目名相同
+
+module decode(out,in);
+output[3:0] out;
+input[1:0] in;
+reg[3:0] out;
+always @(in);
+begin
+case(in)
+2'd0:out=4'b1110;
+2'd1:out=4'b1101;
+2'd2:out=4'b1011;
+2'd3:out=4'b0111;
+
+   endcase
+end
+endmodule
+写好以后点三角形运行适配
+pin planner对电路进行布局设计
+修改电压：1、直接修改
+2、在文件setting->device and pin->Voltage
+再次编译确定引脚分配没出现错误
+
+
+module Vsanba(din,den,reset,dout);
+input [2:0] din;
+input reset;
+output [7:0] den;
+output [7:0] dout;
+reg [7:0]dout;
+reg [7:0]den;
+always @(reset or din)
+begin
+if(!reset)
+dout = 8'b0000_0000;
+else
+case(din)
+3'b000:dout=8'b1100_0000;
+3'b001:dout=8'b1111_1001;
+3'b010:dout=8'b1010_0100;
+3'b011:dout=8'b0111_0000;
+3'b100:dout=8'b1001_1001;
+3'b101:dout=8'b1001_0010;
+3'b110:dout=8'b0000_0010;
+3'b111:dout=8'b1111_1000;
+endcase
+den=2'b0000_0000;
+end
+endmodule
+
+
+

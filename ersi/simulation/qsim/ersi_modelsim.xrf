@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, D:/Quartus data/ersi/ersi.bdf
+source_file = 1, D:/Quartus data/ersi/Waveform.vwf
+source_file = 1, D:/Quartus data/ersi/Waveform1.vwf
+source_file = 1, D:/Quartus data/ersi/db/ersi.cbx.xml
+design_name = ersi
+instance = comp, \c~output , c~output, ersi, 1
+instance = comp, \d~output , d~output, ersi, 1
+instance = comp, \e~output , e~output, ersi, 1
+instance = comp, \f~output , f~output, ersi, 1
+instance = comp, \b~input , b~input, ersi, 1
+instance = comp, \a~input , a~input, ersi, 1
+instance = comp, \inst4~0 , inst4~0, ersi, 1
+instance = comp, \inst4~1 , inst4~1, ersi, 1
+instance = comp, \inst4~2 , inst4~2, ersi, 1

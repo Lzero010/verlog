@@ -1,0 +1,26 @@
+|fulladder
+out1 <= h_adder:inst1.SO
+key1 => h_adder:inst.A
+key2 => h_adder:inst.B
+key3 => h_adder:inst1.B
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder|h_adder:inst1
+A => SO.IN0
+A => CO.IN0
+B => SO.IN1
+B => CO.IN1
+SO <= SO.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder|h_adder:inst
+A => SO.IN0
+A => CO.IN0
+B => SO.IN1
+B => CO.IN1
+SO <= SO.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+

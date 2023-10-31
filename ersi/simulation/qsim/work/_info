@@ -1,0 +1,41 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus data\ersi\simulation\qsim
+versi
+VeN;Y2IVg8=<RY4z=lD9?;3
+r1
+!s85 0
+31
+I5Zmo0_14aAT8GjzQP65922
+Z1 dD:\Quartus data\ersi\simulation\qsim
+w1695121543
+8ersi.vo
+Fersi.vo
+L0 31
+Z2 OL;L;10.1c;51
+Z3 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s90 -work|work|ersi.vo|
+!s100 ?a=3=C_z`c7;XFdiATDce3
+!s108 1695121544.763000
+!s107 ersi.vo|
+!i10b 1
+versi_vlg_vec_tst
+VTbF69bi6QR9U=Ce=D3KI`3
+r1
+31
+IQbAIbd7W[5G]chU^Mz]b>0
+R1
+w1695121542
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R2
+R3
+!s85 0
+!s100 9LF]<7Z2FzXBNWQ5EGnK@1
+!s90 -work|work|Waveform2.vwf.vt|
+!i10b 1
+!s108 1695121544.816000
+!s107 Waveform2.vwf.vt|

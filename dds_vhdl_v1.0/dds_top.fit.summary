@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Oct 22 13:30:53 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : dds_top
+Top-level Entity Name : dds_top
+Family : Cyclone IV E
+Device : EP4CE15F23C8L
+Timing Models : Final
+Total logic elements : 147 / 15,408 ( < 1 % )
+    Total combinational functions : 139 / 15,408 ( < 1 % )
+    Dedicated logic registers : 118 / 15,408 ( < 1 % )
+Total registers : 118
+Total pins : 9 / 344 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 40,960 / 516,096 ( 8 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

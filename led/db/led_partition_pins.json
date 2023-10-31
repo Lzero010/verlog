@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ledn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ledn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ledn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ledn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rest",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1000mV 85C Model Setup 'clk'
+Slack : -5.419
+TNS   : -208.066
+
+Type  : Slow 1000mV 85C Model Setup 'key:u3|key_out'
+Slack : -3.212
+TNS   : -50.606
+
+Type  : Slow 1000mV 85C Model Setup 'TLC5615:u7|SCLK_REG'
+Slack : -2.463
+TNS   : -6.526
+
+Type  : Slow 1000mV 85C Model Setup 'key:u5|key_out'
+Slack : -1.549
+TNS   : -9.847
+
+Type  : Slow 1000mV 85C Model Setup 'key:u2|key_out'
+Slack : -0.111
+TNS   : -0.182
+
+Type  : Slow 1000mV 85C Model Hold 'key:u3|key_out'
+Slack : -0.283
+TNS   : -0.283
+
+Type  : Slow 1000mV 85C Model Hold 'key:u2|key_out'
+Slack : -0.243
+TNS   : -0.410
+
+Type  : Slow 1000mV 85C Model Hold 'key:u5|key_out'
+Slack : 0.119
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Hold 'clk'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Hold 'TLC5615:u7|SCLK_REG'
+Slack : 0.535
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'clk'
+Slack : -4.000
+TNS   : -167.566
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'key:u3|key_out'
+Slack : -1.763
+TNS   : -28.208
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'TLC5615:u7|SCLK_REG'
+Slack : -1.763
+TNS   : -17.630
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'key:u5|key_out'
+Slack : -1.763
+TNS   : -14.104
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'key:u2|key_out'
+Slack : -1.763
+TNS   : -3.526
+
+Type  : Slow 1000mV 0C Model Setup 'clk'
+Slack : -4.860
+TNS   : -192.373
+
+Type  : Slow 1000mV 0C Model Setup 'key:u3|key_out'
+Slack : -3.092
+TNS   : -48.703
+
+Type  : Slow 1000mV 0C Model Setup 'TLC5615:u7|SCLK_REG'
+Slack : -2.381
+TNS   : -6.153
+
+Type  : Slow 1000mV 0C Model Setup 'key:u5|key_out'
+Slack : -1.471
+TNS   : -9.304
+
+Type  : Slow 1000mV 0C Model Setup 'key:u2|key_out'
+Slack : -0.096
+TNS   : -0.147
+
+Type  : Slow 1000mV 0C Model Hold 'key:u3|key_out'
+Slack : -0.297
+TNS   : -0.297
+
+Type  : Slow 1000mV 0C Model Hold 'key:u2|key_out'
+Slack : -0.260
+TNS   : -0.454
+
+Type  : Slow 1000mV 0C Model Hold 'key:u5|key_out'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Hold 'clk'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Hold 'TLC5615:u7|SCLK_REG'
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'clk'
+Slack : -4.000
+TNS   : -167.566
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'key:u3|key_out'
+Slack : -1.763
+TNS   : -28.208
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'TLC5615:u7|SCLK_REG'
+Slack : -1.763
+TNS   : -17.630
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'key:u5|key_out'
+Slack : -1.763
+TNS   : -14.104
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'key:u2|key_out'
+Slack : -1.763
+TNS   : -3.526
+
+Type  : Fast 1000mV 0C Model Setup 'clk'
+Slack : -2.071
+TNS   : -85.457
+
+Type  : Fast 1000mV 0C Model Setup 'key:u3|key_out'
+Slack : -1.363
+TNS   : -21.373
+
+Type  : Fast 1000mV 0C Model Setup 'TLC5615:u7|SCLK_REG'
+Slack : -0.934
+TNS   : -1.064
+
+Type  : Fast 1000mV 0C Model Setup 'key:u5|key_out'
+Slack : -0.415
+TNS   : -2.026
+
+Type  : Fast 1000mV 0C Model Setup 'key:u2|key_out'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 'key:u3|key_out'
+Slack : -0.111
+TNS   : -0.111
+
+Type  : Fast 1000mV 0C Model Hold 'key:u5|key_out'
+Slack : -0.065
+TNS   : -0.520
+
+Type  : Fast 1000mV 0C Model Hold 'key:u2|key_out'
+Slack : -0.063
+TNS   : -0.123
+
+Type  : Fast 1000mV 0C Model Hold 'clk'
+Slack : 0.267
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 'TLC5615:u7|SCLK_REG'
+Slack : 0.286
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'clk'
+Slack : -4.000
+TNS   : -169.363
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'key:u3|key_out'
+Slack : -1.763
+TNS   : -28.208
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'TLC5615:u7|SCLK_REG'
+Slack : -1.763
+TNS   : -17.630
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'key:u5|key_out'
+Slack : -1.763
+TNS   : -14.104
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'key:u2|key_out'
+Slack : -1.763
+TNS   : -3.526
+
+------------------------------------------------------------

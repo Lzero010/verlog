@@ -1,0 +1,18 @@
+module bcdadder_4
+  (
+    input wire[3:0]A,B,
+    input wire cin,
+    output wire[3:0]s1, s0
+  );
+  wire [3:0]sum;
+  wire cout,sel;
+  wire [3:0]aout;
+  
+  ripple_fulladder_4 u1(.a(A),.b(B),.cin(cin),.sum(sum),.co(cout));
+  comparator u2(.a({cout,sum}),.y(sel));
+  circuitA u3(.ain(sum),.aout(aout));
+  mux2to1_4 u4(.a(sum),.b(aout),.sel(sel),.y(s0));
+  
+  assign s1={3'b000,sel};
+endmodule
+  

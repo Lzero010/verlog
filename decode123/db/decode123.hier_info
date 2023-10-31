@@ -1,0 +1,30 @@
+|decode123
+din[0] => Decoder0.IN2
+din[1] => Decoder0.IN1
+din[2] => Decoder0.IN0
+den[0] <= <GND>
+den[1] <= <GND>
+den[2] <= <GND>
+den[3] <= <GND>
+den[4] <= <GND>
+den[5] <= <GND>
+den[6] <= <GND>
+den[7] <= <GND>
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+reset => dout.OUTPUTSELECT
+dout[0] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+

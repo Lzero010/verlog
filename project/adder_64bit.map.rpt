@@ -1,0 +1,774 @@
+Analysis & Synthesis report for adder_64bit
+Sun Oct 22 13:12:56 2023
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Registers Packed Into Inferred Megafunctions
+ 12. Source assignments for altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|altsyncram_4va1:altsyncram2
+ 13. Source assignments for altshift_taps:data_in_a8_reg2_rtl_0|shift_taps_snm:auto_generated|altsyncram_4e81:altsyncram2
+ 14. Source assignments for altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|altsyncram_02b1:altsyncram2
+ 15. Source assignments for altshift_taps:data_in_a7_reg2_rtl_0|shift_taps_rnm:auto_generated|altsyncram_2e81:altsyncram2
+ 16. Source assignments for altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|altsyncram_uua1:altsyncram2
+ 17. Source assignments for altshift_taps:data_in_a6_reg2_rtl_0|shift_taps_qnm:auto_generated|altsyncram_ud81:altsyncram2
+ 18. Source assignments for altshift_taps:data_in_a5_reg2_rtl_0|shift_taps_pnm:auto_generated|altsyncram_3l31:altsyncram4
+ 19. Parameter Settings for Inferred Entity Instance: altshift_taps:sum2_reg2_rtl_0
+ 20. Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a8_reg2_rtl_0
+ 21. Parameter Settings for Inferred Entity Instance: altshift_taps:sum1_reg4_rtl_0
+ 22. Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a7_reg2_rtl_0
+ 23. Parameter Settings for Inferred Entity Instance: altshift_taps:sum4_reg2_rtl_0
+ 24. Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a6_reg2_rtl_0
+ 25. Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a5_reg2_rtl_0
+ 26. altshift_taps Parameter Settings by Entity Instance
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Oct 22 13:12:56 2023           ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                      ; adder_64bit                                     ;
+; Top-level Entity Name              ; adder_64bit                                     ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 385                                             ;
+;     Total combinational functions  ; 160                                             ;
+;     Dedicated logic registers      ; 320                                             ;
+; Total registers                    ; 320                                             ;
+; Total pins                         ; 195                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 288                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; adder_64bit        ; adder_64bit        ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; Off                ; Off                ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                        ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
+; adder_64bit.v                    ; yes             ; User Verilog HDL File        ; D:/Quartus data/project/adder_64bit.v                               ;         ;
+; altshift_taps.tdf                ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altshift_taps.tdf ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/altdpram.inc      ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_counter.inc   ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_compare.inc   ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                 ; d:/intelfpga/18.0/quartus/libraries/megafunctions/lpm_constant.inc  ;         ;
+; db/shift_taps_2jm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_2jm.tdf                       ;         ;
+; db/altsyncram_4va1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_4va1.tdf                      ;         ;
+; db/cntr_7pf.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cntr_7pf.tdf                             ;         ;
+; db/cntr_u8h.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cntr_u8h.tdf                             ;         ;
+; db/shift_taps_snm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_snm.tdf                       ;         ;
+; db/altsyncram_4e81.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_4e81.tdf                      ;         ;
+; db/shift_taps_gkm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_gkm.tdf                       ;         ;
+; db/altsyncram_02b1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_02b1.tdf                      ;         ;
+; db/cntr_6pf.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cntr_6pf.tdf                             ;         ;
+; db/cmpr_ogc.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cmpr_ogc.tdf                             ;         ;
+; db/cntr_s8h.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cntr_s8h.tdf                             ;         ;
+; db/shift_taps_rnm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_rnm.tdf                       ;         ;
+; db/altsyncram_2e81.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_2e81.tdf                      ;         ;
+; db/shift_taps_0jm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_0jm.tdf                       ;         ;
+; db/altsyncram_uua1.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_uua1.tdf                      ;         ;
+; db/cntr_4pf.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cntr_4pf.tdf                             ;         ;
+; db/cntr_r8h.tdf                  ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/cntr_r8h.tdf                             ;         ;
+; db/shift_taps_qnm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_qnm.tdf                       ;         ;
+; db/altsyncram_ud81.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_ud81.tdf                      ;         ;
+; db/shift_taps_pnm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/shift_taps_pnm.tdf                       ;         ;
+; db/altsyncram_3l31.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/altsyncram_3l31.tdf                      ;         ;
+; db/add_sub_24e.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/Quartus data/project/db/add_sub_24e.tdf                          ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 385       ;
+;                                             ;           ;
+; Total combinational functions               ; 160       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 6         ;
+;     -- 3 input functions                    ; 70        ;
+;     -- <=2 input functions                  ; 84        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 32        ;
+;     -- arithmetic mode                      ; 128       ;
+;                                             ;           ;
+; Total registers                             ; 320       ;
+;     -- Dedicated logic registers            ; 320       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 195       ;
+; Total memory bits                           ; 288       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 416       ;
+; Total fan-out                               ; 2072      ;
+; Average fan-out                             ; 2.14      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                               ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Entity Name     ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |adder_64bit                             ; 160 (127)           ; 320 (296)                 ; 288         ; 0            ; 0       ; 0         ; 195  ; 0            ; |adder_64bit                                                                                               ; adder_64bit     ; work         ;
+;    |altshift_taps:data_in_a5_reg2_rtl_0| ; 7 (0)               ; 4 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a5_reg2_rtl_0                                                           ; altshift_taps   ; work         ;
+;       |shift_taps_pnm:auto_generated|    ; 7 (2)               ; 4 (2)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a5_reg2_rtl_0|shift_taps_pnm:auto_generated                             ; shift_taps_pnm  ; work         ;
+;          |altsyncram_3l31:altsyncram4|   ; 0 (0)               ; 0 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a5_reg2_rtl_0|shift_taps_pnm:auto_generated|altsyncram_3l31:altsyncram4 ; altsyncram_3l31 ; work         ;
+;          |cntr_6pf:cntr1|                ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a5_reg2_rtl_0|shift_taps_pnm:auto_generated|cntr_6pf:cntr1              ; cntr_6pf        ; work         ;
+;    |altshift_taps:data_in_a6_reg2_rtl_0| ; 1 (0)               ; 1 (0)                     ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a6_reg2_rtl_0                                                           ; altshift_taps   ; work         ;
+;       |shift_taps_qnm:auto_generated|    ; 1 (0)               ; 1 (0)                     ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a6_reg2_rtl_0|shift_taps_qnm:auto_generated                             ; shift_taps_qnm  ; work         ;
+;          |altsyncram_ud81:altsyncram2|   ; 0 (0)               ; 0 (0)                     ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a6_reg2_rtl_0|shift_taps_qnm:auto_generated|altsyncram_ud81:altsyncram2 ; altsyncram_ud81 ; work         ;
+;          |cntr_4pf:cntr1|                ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a6_reg2_rtl_0|shift_taps_qnm:auto_generated|cntr_4pf:cntr1              ; cntr_4pf        ; work         ;
+;    |altshift_taps:data_in_a7_reg2_rtl_0| ; 5 (0)               ; 2 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a7_reg2_rtl_0                                                           ; altshift_taps   ; work         ;
+;       |shift_taps_rnm:auto_generated|    ; 5 (0)               ; 2 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a7_reg2_rtl_0|shift_taps_rnm:auto_generated                             ; shift_taps_rnm  ; work         ;
+;          |altsyncram_2e81:altsyncram2|   ; 0 (0)               ; 0 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a7_reg2_rtl_0|shift_taps_rnm:auto_generated|altsyncram_2e81:altsyncram2 ; altsyncram_2e81 ; work         ;
+;          |cntr_6pf:cntr1|                ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a7_reg2_rtl_0|shift_taps_rnm:auto_generated|cntr_6pf:cntr1              ; cntr_6pf        ; work         ;
+;    |altshift_taps:data_in_a8_reg2_rtl_0| ; 2 (0)               ; 2 (0)                     ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a8_reg2_rtl_0                                                           ; altshift_taps   ; work         ;
+;       |shift_taps_snm:auto_generated|    ; 2 (0)               ; 2 (0)                     ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a8_reg2_rtl_0|shift_taps_snm:auto_generated                             ; shift_taps_snm  ; work         ;
+;          |altsyncram_4e81:altsyncram2|   ; 0 (0)               ; 0 (0)                     ; 64          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a8_reg2_rtl_0|shift_taps_snm:auto_generated|altsyncram_4e81:altsyncram2 ; altsyncram_4e81 ; work         ;
+;          |cntr_7pf:cntr1|                ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:data_in_a8_reg2_rtl_0|shift_taps_snm:auto_generated|cntr_7pf:cntr1              ; cntr_7pf        ; work         ;
+;    |altshift_taps:sum1_reg4_rtl_0|       ; 8 (0)               ; 5 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum1_reg4_rtl_0                                                                 ; altshift_taps   ; work         ;
+;       |shift_taps_gkm:auto_generated|    ; 8 (0)               ; 5 (1)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated                                   ; shift_taps_gkm  ; work         ;
+;          |altsyncram_02b1:altsyncram2|   ; 0 (0)               ; 0 (0)                     ; 48          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|altsyncram_02b1:altsyncram2       ; altsyncram_02b1 ; work         ;
+;          |cntr_6pf:cntr1|                ; 5 (5)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|cntr_6pf:cntr1                    ; cntr_6pf        ; work         ;
+;          |cntr_s8h:cntr3|                ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|cntr_s8h:cntr3                    ; cntr_s8h        ; work         ;
+;    |altshift_taps:sum2_reg2_rtl_0|       ; 6 (0)               ; 6 (0)                     ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum2_reg2_rtl_0                                                                 ; altshift_taps   ; work         ;
+;       |shift_taps_2jm:auto_generated|    ; 6 (0)               ; 6 (1)                     ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated                                   ; shift_taps_2jm  ; work         ;
+;          |altsyncram_4va1:altsyncram2|   ; 0 (0)               ; 0 (0)                     ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|altsyncram_4va1:altsyncram2       ; altsyncram_4va1 ; work         ;
+;          |cntr_7pf:cntr1|                ; 2 (2)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|cntr_7pf:cntr1                    ; cntr_7pf        ; work         ;
+;          |cntr_u8h:cntr3|                ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|cntr_u8h:cntr3                    ; cntr_u8h        ; work         ;
+;    |altshift_taps:sum4_reg2_rtl_0|       ; 4 (0)               ; 4 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum4_reg2_rtl_0                                                                 ; altshift_taps   ; work         ;
+;       |shift_taps_0jm:auto_generated|    ; 4 (0)               ; 4 (1)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated                                   ; shift_taps_0jm  ; work         ;
+;          |altsyncram_uua1:altsyncram2|   ; 0 (0)               ; 0 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|altsyncram_uua1:altsyncram2       ; altsyncram_uua1 ; work         ;
+;          |cntr_4pf:cntr1|                ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|cntr_4pf:cntr1                    ; cntr_4pf        ; work         ;
+;          |cntr_r8h:cntr3|                ; 3 (3)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |adder_64bit|altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|cntr_r8h:cntr3                    ; cntr_r8h        ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                             ;
++----------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                     ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++----------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; altshift_taps:data_in_a5_reg2_rtl_0|shift_taps_pnm:auto_generated|altsyncram_3l31:altsyncram4|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 3            ; 16           ; 3            ; 16           ; 48   ; None ;
+; altshift_taps:data_in_a6_reg2_rtl_0|shift_taps_qnm:auto_generated|altsyncram_ud81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2            ; 16           ; 2            ; 16           ; 32   ; None ;
+; altshift_taps:data_in_a7_reg2_rtl_0|shift_taps_rnm:auto_generated|altsyncram_2e81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 3            ; 16           ; 3            ; 16           ; 48   ; None ;
+; altshift_taps:data_in_a8_reg2_rtl_0|shift_taps_snm:auto_generated|altsyncram_4e81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4            ; 16           ; 4            ; 16           ; 64   ; None ;
+; altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|altsyncram_02b1:altsyncram2|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; 3            ; 16           ; 3            ; 16           ; 48   ; None ;
+; altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|altsyncram_4va1:altsyncram2|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; 4            ; 8            ; 4            ; 8            ; 32   ; None ;
+; altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|altsyncram_uua1:altsyncram2|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; 2            ; 8            ; 2            ; 8            ; 16   ; None ;
++----------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 320   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 138   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 184   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------+
+; Inverted Register Statistics                                                ;
++-------------------------------------------------------------------+---------+
+; Inverted Register                                                 ; Fan out ;
++-------------------------------------------------------------------+---------+
+; altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|dffe4 ; 16      ;
+; altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|dffe4 ; 8       ;
+; altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|dffe4 ; 8       ;
+; Total number of inverted registers = 3                            ;         ;
++-------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions               ;
++-----------------------+-----------------------+------------+
+; Register Name         ; Megafunction          ; Type       ;
++-----------------------+-----------------------+------------+
+; sum2_reg7[0..7]       ; sum2_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum2_reg6[0..7]       ; sum2_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum2_reg5[0..7]       ; sum2_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum2_reg4[0..7]       ; sum2_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum2_reg3[0..7]       ; sum2_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum2_reg2[0..7]       ; sum2_reg2_rtl_0       ; SHIFT_TAPS ;
+; data_in_a8_reg7[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a8_reg6[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a8_reg5[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a8_reg4[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a8_reg3[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a8_reg2[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b8_reg7[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b8_reg6[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b8_reg5[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b8_reg4[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b8_reg3[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b8_reg2[0..7] ; data_in_a8_reg2_rtl_0 ; SHIFT_TAPS ;
+; sum1_reg8[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum1_reg7[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum1_reg6[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum1_reg5[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum1_reg4[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum3_reg6[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum3_reg5[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum3_reg4[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum3_reg3[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; sum3_reg2[0..7]       ; sum1_reg4_rtl_0       ; SHIFT_TAPS ;
+; data_in_a7_reg6[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a7_reg5[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a7_reg4[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a7_reg3[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a7_reg2[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b7_reg6[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b7_reg5[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b7_reg4[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b7_reg3[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b7_reg2[0..7] ; data_in_a7_reg2_rtl_0 ; SHIFT_TAPS ;
+; sum4_reg5[0..7]       ; sum4_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum4_reg4[0..7]       ; sum4_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum4_reg3[0..7]       ; sum4_reg2_rtl_0       ; SHIFT_TAPS ;
+; sum4_reg2[0..7]       ; sum4_reg2_rtl_0       ; SHIFT_TAPS ;
+; data_in_a6_reg5[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a6_reg4[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a6_reg3[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a6_reg2[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b6_reg5[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b6_reg4[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b6_reg3[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b6_reg2[0..7] ; data_in_a6_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a5_reg4[0..7] ; data_in_a5_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a5_reg3[0..7] ; data_in_a5_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_a5_reg2[0..7] ; data_in_a5_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b5_reg4[0..7] ; data_in_a5_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b5_reg3[0..7] ; data_in_a5_reg2_rtl_0 ; SHIFT_TAPS ;
+; data_in_b5_reg2[0..7] ; data_in_a5_reg2_rtl_0 ; SHIFT_TAPS ;
++-----------------------+-----------------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:sum2_reg2_rtl_0|shift_taps_2jm:auto_generated|altsyncram_4va1:altsyncram2 ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                               ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:data_in_a8_reg2_rtl_0|shift_taps_snm:auto_generated|altsyncram_4e81:altsyncram2 ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                     ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                      ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:sum1_reg4_rtl_0|shift_taps_gkm:auto_generated|altsyncram_02b1:altsyncram2 ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                               ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:data_in_a7_reg2_rtl_0|shift_taps_rnm:auto_generated|altsyncram_2e81:altsyncram2 ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                     ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                      ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:sum4_reg2_rtl_0|shift_taps_0jm:auto_generated|altsyncram_uua1:altsyncram2 ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                               ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                ;
++---------------------------------+--------------------+------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:data_in_a6_reg2_rtl_0|shift_taps_qnm:auto_generated|altsyncram_ud81:altsyncram2 ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                     ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                      ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Source assignments for altshift_taps:data_in_a5_reg2_rtl_0|shift_taps_pnm:auto_generated|altsyncram_3l31:altsyncram4 ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                     ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                      ;
++---------------------------------+--------------------+------+--------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:sum2_reg2_rtl_0 ;
++----------------+----------------+----------------------------------------------+
+; Parameter Name ; Value          ; Type                                         ;
++----------------+----------------+----------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                      ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                      ;
+; TAP_DISTANCE   ; 6              ; Untyped                                      ;
+; WIDTH          ; 8              ; Untyped                                      ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                      ;
+; CBXI_PARAMETER ; shift_taps_2jm ; Untyped                                      ;
++----------------+----------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a8_reg2_rtl_0 ;
++----------------+----------------+----------------------------------------------------+
+; Parameter Name ; Value          ; Type                                               ;
++----------------+----------------+----------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                            ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                            ;
+; TAP_DISTANCE   ; 6              ; Untyped                                            ;
+; WIDTH          ; 16             ; Untyped                                            ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                            ;
+; CBXI_PARAMETER ; shift_taps_snm ; Untyped                                            ;
++----------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:sum1_reg4_rtl_0 ;
++----------------+----------------+----------------------------------------------+
+; Parameter Name ; Value          ; Type                                         ;
++----------------+----------------+----------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                      ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                      ;
+; TAP_DISTANCE   ; 5              ; Untyped                                      ;
+; WIDTH          ; 16             ; Untyped                                      ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                      ;
+; CBXI_PARAMETER ; shift_taps_gkm ; Untyped                                      ;
++----------------+----------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a7_reg2_rtl_0 ;
++----------------+----------------+----------------------------------------------------+
+; Parameter Name ; Value          ; Type                                               ;
++----------------+----------------+----------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                            ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                            ;
+; TAP_DISTANCE   ; 5              ; Untyped                                            ;
+; WIDTH          ; 16             ; Untyped                                            ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                            ;
+; CBXI_PARAMETER ; shift_taps_rnm ; Untyped                                            ;
++----------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:sum4_reg2_rtl_0 ;
++----------------+----------------+----------------------------------------------+
+; Parameter Name ; Value          ; Type                                         ;
++----------------+----------------+----------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                      ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                      ;
+; TAP_DISTANCE   ; 4              ; Untyped                                      ;
+; WIDTH          ; 8              ; Untyped                                      ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                      ;
+; CBXI_PARAMETER ; shift_taps_0jm ; Untyped                                      ;
++----------------+----------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a6_reg2_rtl_0 ;
++----------------+----------------+----------------------------------------------------+
+; Parameter Name ; Value          ; Type                                               ;
++----------------+----------------+----------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                            ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                            ;
+; TAP_DISTANCE   ; 4              ; Untyped                                            ;
+; WIDTH          ; 16             ; Untyped                                            ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                            ;
+; CBXI_PARAMETER ; shift_taps_qnm ; Untyped                                            ;
++----------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: altshift_taps:data_in_a5_reg2_rtl_0 ;
++----------------+----------------+----------------------------------------------------+
+; Parameter Name ; Value          ; Type                                               ;
++----------------+----------------+----------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                            ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                            ;
+; TAP_DISTANCE   ; 3              ; Untyped                                            ;
+; WIDTH          ; 16             ; Untyped                                            ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                            ;
+; CBXI_PARAMETER ; shift_taps_pnm ; Untyped                                            ;
++----------------+----------------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; altshift_taps Parameter Settings by Entity Instance              ;
++----------------------------+-------------------------------------+
+; Name                       ; Value                               ;
++----------------------------+-------------------------------------+
+; Number of entity instances ; 7                                   ;
+; Entity Instance            ; altshift_taps:sum2_reg2_rtl_0       ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 6                                   ;
+;     -- WIDTH               ; 8                                   ;
+; Entity Instance            ; altshift_taps:data_in_a8_reg2_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 6                                   ;
+;     -- WIDTH               ; 16                                  ;
+; Entity Instance            ; altshift_taps:sum1_reg4_rtl_0       ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 5                                   ;
+;     -- WIDTH               ; 16                                  ;
+; Entity Instance            ; altshift_taps:data_in_a7_reg2_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 5                                   ;
+;     -- WIDTH               ; 16                                  ;
+; Entity Instance            ; altshift_taps:sum4_reg2_rtl_0       ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 4                                   ;
+;     -- WIDTH               ; 8                                   ;
+; Entity Instance            ; altshift_taps:data_in_a6_reg2_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 4                                   ;
+;     -- WIDTH               ; 16                                  ;
+; Entity Instance            ; altshift_taps:data_in_a5_reg2_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                                   ;
+;     -- TAP_DISTANCE        ; 3                                   ;
+;     -- WIDTH               ; 16                                  ;
++----------------------------+-------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 195                         ;
+; cycloneiii_ff         ; 320                         ;
+;     CLR               ; 131                         ;
+;     ENA               ; 177                         ;
+;     ENA CLR           ; 7                           ;
+;     plain             ; 5                           ;
+; cycloneiii_lcell_comb ; 160                         ;
+;     arith             ; 128                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 56                          ;
+;         3 data inputs ; 70                          ;
+;     normal            ; 32                          ;
+;         0 data inputs ; 14                          ;
+;         1 data inputs ; 12                          ;
+;         4 data inputs ; 6                           ;
+; cycloneiii_ram_block  ; 96                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.80                        ;
+; Average LUT depth     ; 1.16                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+    Info: Processing started: Sun Oct 22 13:12:43 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder_64bit -c adder_64bit
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20032): Parallel compilation is enabled and will use up to 6 processors
+Info (12021): Found 1 design units, including 1 entities, in source file adder_64bit.v
+    Info (12023): Found entity 1: adder_64bit File: D:/Quartus data/project/adder_64bit.v Line: 6
+Info (12127): Elaborating entity "adder_64bit" for the top level hierarchy
+Info (19000): Inferred 7 megafunctions from design logic
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "sum2_reg2_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 6
+        Info (286033): Parameter WIDTH set to 8
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "data_in_a8_reg2_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 6
+        Info (286033): Parameter WIDTH set to 16
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "sum1_reg4_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 5
+        Info (286033): Parameter WIDTH set to 16
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "data_in_a7_reg2_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 5
+        Info (286033): Parameter WIDTH set to 16
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "sum4_reg2_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 4
+        Info (286033): Parameter WIDTH set to 8
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "data_in_a6_reg2_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 4
+        Info (286033): Parameter WIDTH set to 16
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "data_in_a5_reg2_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 3
+        Info (286033): Parameter WIDTH set to 16
+Info (12130): Elaborated megafunction instantiation "altshift_taps:sum2_reg2_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:sum2_reg2_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "6"
+    Info (12134): Parameter "WIDTH" = "8"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_2jm.tdf
+    Info (12023): Found entity 1: shift_taps_2jm File: D:/Quartus data/project/db/shift_taps_2jm.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4va1.tdf
+    Info (12023): Found entity 1: altsyncram_4va1 File: D:/Quartus data/project/db/altsyncram_4va1.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_7pf.tdf
+    Info (12023): Found entity 1: cntr_7pf File: D:/Quartus data/project/db/cntr_7pf.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u8h.tdf
+    Info (12023): Found entity 1: cntr_u8h File: D:/Quartus data/project/db/cntr_u8h.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "altshift_taps:data_in_a8_reg2_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:data_in_a8_reg2_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "6"
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_snm.tdf
+    Info (12023): Found entity 1: shift_taps_snm File: D:/Quartus data/project/db/shift_taps_snm.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4e81.tdf
+    Info (12023): Found entity 1: altsyncram_4e81 File: D:/Quartus data/project/db/altsyncram_4e81.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "altshift_taps:sum1_reg4_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:sum1_reg4_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "5"
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_gkm.tdf
+    Info (12023): Found entity 1: shift_taps_gkm File: D:/Quartus data/project/db/shift_taps_gkm.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_02b1.tdf
+    Info (12023): Found entity 1: altsyncram_02b1 File: D:/Quartus data/project/db/altsyncram_02b1.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_6pf.tdf
+    Info (12023): Found entity 1: cntr_6pf File: D:/Quartus data/project/db/cntr_6pf.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ogc.tdf
+    Info (12023): Found entity 1: cmpr_ogc File: D:/Quartus data/project/db/cmpr_ogc.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_s8h.tdf
+    Info (12023): Found entity 1: cntr_s8h File: D:/Quartus data/project/db/cntr_s8h.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "altshift_taps:data_in_a7_reg2_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:data_in_a7_reg2_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "5"
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_rnm.tdf
+    Info (12023): Found entity 1: shift_taps_rnm File: D:/Quartus data/project/db/shift_taps_rnm.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2e81.tdf
+    Info (12023): Found entity 1: altsyncram_2e81 File: D:/Quartus data/project/db/altsyncram_2e81.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "altshift_taps:sum4_reg2_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:sum4_reg2_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "4"
+    Info (12134): Parameter "WIDTH" = "8"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_0jm.tdf
+    Info (12023): Found entity 1: shift_taps_0jm File: D:/Quartus data/project/db/shift_taps_0jm.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uua1.tdf
+    Info (12023): Found entity 1: altsyncram_uua1 File: D:/Quartus data/project/db/altsyncram_uua1.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4pf.tdf
+    Info (12023): Found entity 1: cntr_4pf File: D:/Quartus data/project/db/cntr_4pf.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_r8h.tdf
+    Info (12023): Found entity 1: cntr_r8h File: D:/Quartus data/project/db/cntr_r8h.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "altshift_taps:data_in_a6_reg2_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:data_in_a6_reg2_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "4"
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_qnm.tdf
+    Info (12023): Found entity 1: shift_taps_qnm File: D:/Quartus data/project/db/shift_taps_qnm.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ud81.tdf
+    Info (12023): Found entity 1: altsyncram_ud81 File: D:/Quartus data/project/db/altsyncram_ud81.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "altshift_taps:data_in_a5_reg2_rtl_0"
+Info (12133): Instantiated megafunction "altshift_taps:data_in_a5_reg2_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "3"
+    Info (12134): Parameter "WIDTH" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_pnm.tdf
+    Info (12023): Found entity 1: shift_taps_pnm File: D:/Quartus data/project/db/shift_taps_pnm.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3l31.tdf
+    Info (12023): Found entity 1: altsyncram_3l31 File: D:/Quartus data/project/db/altsyncram_3l31.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_24e.tdf
+    Info (12023): Found entity 1: add_sub_24e File: D:/Quartus data/project/db/add_sub_24e.tdf Line: 22
+Info (13000): Registers with preset signals will power-up high File: D:/Quartus data/project/db/shift_taps_gkm.tdf Line: 38
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 679 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 130 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 388 logic cells
+    Info (21064): Implemented 96 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4744 megabytes
+    Info: Processing ended: Sun Oct 22 13:12:56 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:07
+
+

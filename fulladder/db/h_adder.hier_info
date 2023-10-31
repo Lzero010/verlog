@@ -1,0 +1,9 @@
+|h_adder
+A => SO.IN0
+A => CO.IN0
+B => SO.IN1
+B => CO.IN1
+SO <= SO.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
